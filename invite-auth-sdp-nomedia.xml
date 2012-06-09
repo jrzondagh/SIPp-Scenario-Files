@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE scenario SYSTEM "sipp.dtd">
 
-<scenario name="INVITE with Auth and SDP">
+<scenario name="UAC INVITE with Auth and SDP">
   <send retrans="500" start_txn="invite">
     <![CDATA[
 
@@ -14,7 +14,7 @@
       Contact: <sip:sipp@[local_ip]:[local_port]>
       Max-Forwards: 70
       Subject: Performance Test
-      User-Agent: SIPp Tester
+      User-Agent: SIPp Tester UAC
       Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
       Content-Type: application/sdp
       Content-Length: [len]
@@ -50,7 +50,7 @@
       Contact: <sip:sipp@[local_ip]:[local_port]>
       Max-Forwards: 70
       Subject: Performance Test
-      User-Agent: SIPp Tester
+      User-Agent: SIPp Tester UAC
       Content-Length: 0
 
     ]]>
@@ -69,7 +69,7 @@
       Contact: <sip:sipp@[local_ip]:[local_port]>
       Max-Forwards: 70
       Subject: Performance Test
-      User-Agent: SIPp Tester   
+      User-Agent: SIPp Tester UAC   
       Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
       [field2]
       Content-Type: application/sdp
@@ -117,7 +117,7 @@
       Contact: <sip:sipp@[local_ip]:[local_port]>
       Max-Forwards: 70
       Subject: Performance Test
-      User-Agent: SIPp Tester
+      User-Agent: SIPp Tester UAC
       Content-Length: 0
 
     ]]>
@@ -138,7 +138,7 @@
       Contact: <sip:sipp@[local_ip]:[local_port]>
       Max-Forwards: 70
       Subject: Performance Test
-      User-Agent: SIPp Tester
+      User-Agent: SIPp Tester UAC
       [field2]
       Content-Length: 0
 
